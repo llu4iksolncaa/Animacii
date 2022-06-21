@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imgvw"
+        android:layout_width="406dp"
+        android:layout_height="396dp"
+        android:src="@mipmap/gipnopicture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRClk"
+        android:layout_width="408dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgvw"
+        android:layout_marginTop="40dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Поворот по часовой стрелке"
+        app:layout_constraintTop_toBottomOf="@+id/btnFadeIn"
+        tools:layout_editor_absoluteX="1dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRAClk"
+        android:layout_width="408dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btnRClk"
+        android:layout_marginTop="36dp"
+        android:layout_toRightOf="@+id/btnRClk"
+        android:background="@color/design_default_color_primary"
+        android:text="Поворот против часовой стрелки"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRClk" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFadeIn"
+        android:layout_width="408dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgvw"
+        android:layout_marginTop="32dp"
+        android:background="@color/design_default_color_primary"
+        android:text="Анимация появления"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnFadeOut" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnFadeOut"
+        android:layout_width="408dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/btnFadeIn"
+        android:layout_toRightOf="@+id/btnFadeIn"
+        android:background="@color/design_default_color_primary"
+        android:text="Анимация исчезновения"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
